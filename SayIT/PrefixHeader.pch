@@ -1,0 +1,29 @@
+//
+//  PrefixHeader.pch
+//  SayIT
+//
+//  Created by Devrepublic on 7/7/15.
+//  Copyright (c) 2015 DevRepublic. All rights reserved.
+//
+
+#ifndef SayIT_PrefixHeader_pch
+#define SayIT_PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import "HomeViewController.h"
+#import "QuestionsViewController.h"
+#import "FBLabel.h"
+
+#define WEBSERVICEPATH @"http://devrepublic-projects.nl/development/say-it/public/APIs/"
+
+#define imageBaseUrl @"http://devrepublic-projects.nl/development/say-it/public/uploads/images/questions/icon/"
+#define iconBaseUrl  @"http://www.devrepublic-projects.nl/development/say-it/public/uploads/images/questionicons/icon/"
+
+#define storyboard [UIStoryboard storyboardWithName:@"Main" bundle:nil]
+#define appdelegete ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+
+#define DisplayAlertWithTitle(title,msg){UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:title message:msg delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil]; [alertView show]; }
+
+#define AppName @"Say-it"
+
+#endif
